@@ -5,3 +5,5 @@ Crawling and Deduplication of Polar Datasets Using Nutch and Tika
 A program to fetch the content-types of the urls crawled by Apache Nutch.
 #####Usage:#####
 python fetch_url.py inputfile
+
+inputfile is the dump data of CrawlDb.
