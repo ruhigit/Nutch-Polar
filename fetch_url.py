@@ -1,4 +1,7 @@
 import sys
+ if len(sys.argv) != 2:
+    print ('usage: python3 fetch_url.py inputFile')
+    sys.exit(1)
 inputfile=open(sys.argv[1],'r',errors='ignore')
 urls=dict()
 str='Content-Type'
