@@ -1,5 +1,5 @@
 import sys
-inputfile=open(sys.argv[1],'r')
+inputfile=open(sys.argv[1],'r',errors='ignore')
 urls=dict()
 str='Content-Type'
 for line in inputfile:
