@@ -1,7 +1,7 @@
 import sys
 inputfile=open(sys.argv[1],'r')
 urls=dict()
-str=sys.argv[2]
+str='Content-Type'
 for line in inputfile:
 	words=line.split()
 	for index,word in enumerate(words):
