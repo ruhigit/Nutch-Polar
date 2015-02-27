@@ -1,4 +1,5 @@
 import sys
+import json
  if len(sys.argv) != 2:
     print ('usage: python3 fetch_url.py inputFile')
     sys.exit(1)
@@ -15,5 +16,6 @@ for line in inputfile:
 				urls[type_url]=1
 			else:
 				urls[type_url]+=1
-print(urls)
+#print(urls)
+json.dump(urls, open("mime_types.txt",'w'))
 inputfile.close()
